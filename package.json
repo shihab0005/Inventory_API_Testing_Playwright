@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:one": "npx playwright test Global_search_api.spec.js",
+    "test:two": "npx playwright test Handle_Dynamic_date_JSON_file.spec.js",
+    "test:three": "npx playwright test Order_Create_from_csv.spec.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
