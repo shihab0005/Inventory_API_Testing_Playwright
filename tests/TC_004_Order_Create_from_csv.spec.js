@@ -10,9 +10,9 @@ const order_data = parse(fs.readFileSync("TestData/create_order.csv"), {
 });
 
 test("Inventory Order Create form CSV", async ({ request }) => {
-  //console.log(order_data);
+
   const get_token = await fs1.readFile("auth-token.txt", "utf-8");
-  //console.log(get_token);
+ 
   let create_order;
   for (let data of order_data) {
     create_order = await request.post(

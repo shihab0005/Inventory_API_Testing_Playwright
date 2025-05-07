@@ -3,8 +3,6 @@
  * 
  **/
 
-
-
 import test from "@playwright/test";
 import "dotenv/config";
 import fs from "fs/promises";
@@ -12,21 +10,7 @@ import fs from "fs/promises";
 import month_datas from "../TestData/ci_month_data.json";
 
 test("Handle Dynamic data from JSON file", async ({ request }) => {
-  //------------------------ Get token from this API (Token Handle Aproach-2) Save in txt file and reuse-------------------------------------//
-  const res = await request.get(`${process.env.BASE_URL2}/oauth/token`, {
-    params: {
-      client_id: "client_id",
-      client_secret: "client_secret",
-      grant_type: "password",
-      username: `${process.env.USER_NAME}`,
-      password: `${process.env.PASSWORD}`,
-    },
-  });
-  const data = await res.json();
-  const token = data.access_token;
-
-  await fs.writeFile("auth-token.txt", token); // save token on auth-token.txt file
-
+  
   const get_token = await fs.readFile("auth-token.txt", "utf-8"); // get token from auth-token.txt file
 
   // ------------------------ Get January to April data By Using Date Range form JSON file -----------------------------//
