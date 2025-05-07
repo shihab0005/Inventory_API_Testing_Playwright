@@ -1,4 +1,4 @@
-import test, { expect } from "@playwright/test";
+import test from "@playwright/test";
 import { BASE_URL, USERNAME, PASSWORD } from "../Utils/config";
 import fs from "fs/promises";
 import { getToken } from "../Utils/tokenGenerate";

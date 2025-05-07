@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:one": "npx playwright test Global_search_api.spec.js",
-    "test:two": "npx playwright test Handle_Dynamic_date_JSON_file.spec.js",
-    "test:three": "npx playwright test Order_Create_from_csv.spec.js"
+    "test:one": "npx playwright test TC_001_token_create_and_save_auth_token_file.spec.js",
+    "test:two": "npx playwright test TC_002_Global_search_api.spec.js",
+    "test:three": "npx playwright test TC_003_Handle_Dynamic_date_JSON_file.spec.js",
+    "test:four": "npx playwright test TC_004_Order_Create_from_csv.spec.js"
   },
   "keywords": [],
   "author": "",
