@@ -1,23 +1,22 @@
 /**
- * 
- * 
+ *
+ *
  **/
 
 import test from "@playwright/test";
-import "dotenv/config";
+import { BASE_URL, USERNAME, PASSWORD } from "../Utils/config";
 import fs from "fs/promises";
 
 import month_datas from "../TestData/ci_month_data.json";
 
 test("Handle Dynamic data from JSON file", async ({ request }) => {
-  
   const get_token = await fs.readFile("auth-token.txt", "utf-8"); // get token from auth-token.txt file
 
   // ------------------------ Get January to April data By Using Date Range form JSON file -----------------------------//
 
   for (let month_data of month_datas) {
     const res_data = await request.get(
-      `${process.env.BASE_URL2}/api/v1/ci-dashboard/overview`,
+      `${BASE_URL}/api/v1/ci-dashboard/overview`,
       {
         headers: {
           Authorization: `Bearer ${get_token}`,
@@ -37,7 +36,7 @@ test("Handle Dynamic data from JSON file", async ({ request }) => {
 
   for (let payments of month_datas) {
     const res_data = await request.get(
-      `${process.env.BASE_URL2}/api/v1/ci-dashboard/payment-overview`,
+      `${BASE_URL}/api/v1/ci-dashboard/payment-overview`,
       {
         headers: {
           Authorization: `Bearer ${get_token}`,
