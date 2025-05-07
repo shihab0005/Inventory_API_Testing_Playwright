@@ -4,7 +4,7 @@
  **/
 
 import test from "@playwright/test";
-import { BASE_URL, USERNAME, PASSWORD } from "../Utils/config";
+import { BASE_URL } from "../Utils/config";
 import fs from "fs/promises";
 
 import month_datas from "../TestData/ci_month_data.json";
