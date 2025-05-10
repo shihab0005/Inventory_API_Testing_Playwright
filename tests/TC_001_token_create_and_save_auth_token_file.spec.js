@@ -22,5 +22,5 @@ test("Create Token and Save auth-token.txt file for reuse", async ({
   const token = await getToken(request, BASE_URL, USERNAME, PASSWORD);
 
   await fs.writeFile("auth-token.txt", token); // save token on auth-token.txt file
-  console.log("Token: " + token);
+  //console.log("Token: " + token);
 });
