@@ -5,7 +5,6 @@ This project was all about creating a clean, flexible, and secure automation fra
 🔑 Key Highlights:
 
 ✅ Implemented two smart token-handling approaches:
-
    1️⃣ Fetched token via login API and saved to auth-token.txt for reuse
    2️⃣ Parsed token directly from JSON response and used it instantly in API calls
 
@@ -13,8 +12,7 @@ This project was all about creating a clean, flexible, and secure automation fra
 🔐 Secured private credentials using .env to prevent hardcoding
 ♻️ Wrote reusable, maintainable, and scalable scripts for long-term growth
 
-I'm always exploring better ways to automate and elevate software quality. Onward and upward! 💻🚀
-#Playwright #JavaScript #APITesting #AutomationEngineer #SoftwareTesting #TestAutomation #QA #SDET #NodeJS
+I'm always exploring better ways to automate and elevate software quality. Onward and upward! 💻
 
 
 ## Installation
