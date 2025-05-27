@@ -5,6 +5,7 @@ This project was all about creating a clean, flexible, and secure automation fra
 🔑 Key Highlights:
 
 ✅ Implemented two smart token-handling approaches:
+
    1️⃣ Fetched token via login API and saved to auth-token.txt for reuse
    2️⃣ Parsed token directly from JSON response and used it instantly in API calls
 
