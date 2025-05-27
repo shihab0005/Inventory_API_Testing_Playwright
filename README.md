@@ -23,7 +23,7 @@ Install the dependencies and devDependencies to run the test.
   
 **Clone the repository**
 ```bash
-   https://github.com/shihab0005/DemoBlaze-With-Playwright-Js.git
+   https://github.com/shihab0005/Inventory_API_Testing_Playwright.git
 ```
 
 **Install dependencies**
